@@ -16,6 +16,8 @@ public class Example3 {
         System.out.println(veh2.getName());
         Vehicle veh3 = context.getBean("ferrariVehicle",Vehicle.class);
         System.out.println(veh3.getName());
+        Vehicle veh4 = context.getBean(Vehicle.class);
+        System.out.println(veh4.getName());
 
     }
 }
