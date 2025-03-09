@@ -22,21 +22,21 @@ So spring container can process the class and generate Spring beans to be used i
 @Configuration
 public class ProjectConfig {
 
-    @Bean
+    @Bean(name="audiVehicle")
     Vehicle vehicle1(){
         var veh = new Vehicle();
         veh.setName("Audi");
         return veh;
     }
 
-    @Bean
+    @Bean(value="Honda")
     Vehicle vehicle2(){
         var veh = new Vehicle();
         veh.setName("Honda");
         return veh;
     }
 
-    @Bean
+    @Bean("ferrariVehicle")
     Vehicle vehicle3(){
         var veh = new Vehicle();
         veh.setName("Toyota");
