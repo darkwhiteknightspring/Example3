@@ -10,6 +10,12 @@ import org.springframework.context.annotation.Primary;
    Primary annotation is used when if we don't mention the name of the bean we still can refer the
    bean annotated with primary annotation.
 
+    When you have multiple beans of the same kind inside the Spring context,
+    you can make one of them primary by using @Primary annotation. Primary bean is
+    the one which Spring will choose if it has multiple options and you don’t specify a name.
+    In other words, it is the default bean that Spring Context will consider in case of
+    confusion due to multiple beans present of same type.
+
 */
 
 
